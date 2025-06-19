@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>OTP Display</title>
+</head>
+<body>
+
+    <div id=" main-box">
+       <div id="otpDisplay">
+        
+    </div>
+
+    <div id="ot">
+        
+        <button class="otp-button" maxlength="1" ></button>
+        <button class="otp-button"></button>
+        <button class="otp-button"></button>
+        <button class="otp-button"></button>
+    </div>
+
+    <div id="inp"> 
+        <input type="number" class="check" min="1" max="1" ></input>
+        <input type="number" class="check" maxlength="1"></input>
+        <input type="number" class="check" maxlength="1"></input>
+        <input type="number" class="check" maxlength="1"></input>
+    </div>
+       
+    <button id="verifyButton">  Verify OTP  </button>
+
+    <div id="result"></div>
+
+    </div> 
+
+    
+
+     <script>
+        const otp = function() {
+            const num = '0123456789';
+            let result = '';
+
+            for (let i = 0; i < 4; i++) {
+                result += num[Math.floor(Math.random() * 10)];
+            }
+
+            return result;
+        }
+
+        
+        const otpDisplayElement = document.getElementById('otpDisplay');
+        const otpValue = otp();
+        otpDisplayElement.innerHTML = otpValue;
+       
+
+
+        // ----------------used when i want to display the input inside thebutton
+        const otpButtons = document.querySelectorAll('.otp-button');
+        // Display each digit in a separate button
+        for (let i = 0; i < otpValue.length; i++) {
+            otpButtons[i].innerHTML = otpValue[i];
+        }
+        console.log(otpButtons);
+
+
+
+        const verify =document.getElementById('verifyButton')
+        const results = document.getElementById('result')
+
+        const result = document.getElementsByTagName('check')
+        const otpInputs = document.querySelectorAll('#inp input');
+
+        verify.addEventListener('click',function(){
+        //    const enteredOTP = Array.from(otpInputs).map(button => button.innerHTML).join('');
+        const enteredOTP = Array.from(otpInputs).map(input => input.value).join('');
+           console.log(enteredOTP);
+
+           if( enteredOTP === otpValue){
+    results.textContent = `OTP Verified!`
+}else{
+    results.textContent = `re enter the verificationotp password`
+}
+        })
+
+
+
+    </script> 
+
+</body>
+</html>

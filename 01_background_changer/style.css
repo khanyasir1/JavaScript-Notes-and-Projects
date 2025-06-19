@@ -1,0 +1,92 @@
+body{
+    padding-left: 5px;
+    margin-top: 5px;
+    background-color: #F2F1EB;
+}
+
+button{
+
+    display: inline-block; 
+    width:250px ;
+    padding: 10px;
+}
+.first,.second{
+    font-size: large;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #212121;
+    color: #fff;
+    
+}
+
+
+a {
+    color: inherit; /* Set the color to inherit from its parent */
+    text-decoration: none; /* Remove underline */
+    
+}
+
+
+h1{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+   justify-content: center;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    display: inline-block;
+    margin-right: 12px; /* Adjust the margin as needed for spacing */
+}
+
+
+.box1{
+    background-color: #212121;
+    border:1px solid #212121;
+    color: #212121;
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.box2{
+    left:50px;
+    background-color: #fff;
+    border:1px solid #212121;
+    color: #212121;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box3{
+    left:50px;
+    background-color: orange;
+    border:1px solid #212121;
+    color: #212121;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box4{
+    left:50px;
+    background-color: greenyellow;
+    border:1px solid #212121;
+    color: #212121;
+    width: 100px;
+    height: 100px;
+}  
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+

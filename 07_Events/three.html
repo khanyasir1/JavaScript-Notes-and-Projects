@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC</title>
+</head>
+<body>
+    <h1>javascript with yasir </h1>
+    <button id="start">Start </button>
+    <button id="stop">Stop</button>
+    <div id="container"></div>
+    
+</body>
+<script>
+
+   
+const start = function() {
+  const outputContainer = document.getElementById('container');
+  const newOutput = document.createElement('div');
+  newOutput.textContent = "Started perfectly!!!";
+  outputContainer.appendChild(newOutput);
+  
+}
+
+let intervalId; // Variable to store the interval ID
+
+document.querySelector('#start').addEventListener('click', function() {
+  intervalId = setInterval(start, 1000);
+  
+});
+
+document.querySelector('#stop').addEventListener('click', function() {
+  clearInterval(intervalId);
+  const outputContainer = document.getElementById('container');
+  const newOutput = document.createElement('div');
+  newOutput.textContent = "Stopped";
+  outputContainer.appendChild(newOutput);
+});
+//     const start = function() {
+//   console.log("Started perfectly!!!");
+// }
+
+// let intervalId; // Variable to store the interval ID
+
+// const display = document.querySelector('#start').addEventListener('click', function() {
+//   intervalId = setInterval(start, 1000);
+
+// });
+
+// const stop = document.querySelector('#stop').addEventListener('click', function() {
+//   clearInterval(intervalId);
+//   console.log("Stopped");
+// });
+
+
+
+
+
+</script>
+</html>

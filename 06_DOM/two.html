@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>creating element</title>  
+</head>
+<body style = "background-color: #212121;  color: #fff;">
+    
+<script>
+
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "hp";
+    div.id = "ryzen-5";
+    div.setAttribute("title", "welcome yasir")
+    div.style.textAlign ="center";
+    div.style.color = "black"
+    div.style.backgroundColor = "#88AB8E"
+    div.style.padding= "10px"
+    div.style.borderColor = "red"
+    div.style.borderRadius = "5px"
+    div.style.display = "block";
+    div.innerText = "chai aur  "
+    const data = document.createTextNode("biscuit")
+    console.log(data);
+    div.appendChild(data);
+    document.body.appendChild(div);
+
+    const di = document.createElement('di')
+    console.log(di);
+    di.className = "hp";
+    di.id = "ryzen-5";
+    di.style.textAlign="center"
+    di.setAttribute("title", "welcome yasir")
+    di.style.color = "black"
+    di.style.backgroundColor = "#C1F2B0"
+    di.style.padding= "10px"
+    di.style.borderColor = "red"
+    di.style.borderRadius = "5px"
+    di.style.display = "block";
+    di.style.marginTop = "10px";
+    di.innerText = "chai aur "
+    const dta = document.createTextNode(" yasir ")
+    console.log(dta);
+    di.appendChild(dta);
+    document.body.appendChild(di);
+
+
+    const third = document.createElement('div')
+    console.log(third);
+    third.className="third"
+    third.id = "third"
+    third.setAttribute("third", "first")
+    third.innerText="to-do "
+    third.style.textAlign="center"
+    third.setAttribute("title", "welcome yasir")
+    third.style.color = "black"
+    third.style.backgroundColor = "#DF826C"
+    third.style.padding= "10px"
+    third.style.borderColor = "red"
+    third.style.borderRadius = "5px"
+    third.style.display = "block";
+    third.style.marginTop = "10px";
+    const last = document.createTextNode("completed") //Text nodes are used to store and display text content within elements, such as paragraphs, divs, spans, and other HTML elements.
+    console.log(last);
+    third.appendChild(last)
+    document.body.appendChild(third)
+    /*
+    Here's a breakdown of the line:
+
+document.body: This part of the code refers to the <body> element of the HTML document.
+
+.appendChild(third): The appendChild() method is called on the <body> element, 
+    and it takes an argument, which is the third variable (presumably representing an HTML element). 
+    This method appends the specified child (in this case, the third element) as the last child of the parent element (the <body> element).
+   */ 
+
+        const body = document.querySelector("body");
+        // body.style.display = "flex"
+        body.style.flexWrap = "h1"
+        const heading = document.createElement("h1")
+        heading.id = "heading"
+        heading.className = "prompt-heading"
+        heading.innnerText = "hello "
+        heading.style.color  = "pink"
+        heading.style.backgroundColor = "#DF826C"
+        heading.style.padding= "10px"
+        heading.style.borderColor = "red"
+        heading.style.borderRadius = "5px"
+        heading.style.display = "block";
+        heading.style.marginTop = "10px";
+        heading.style.justifyContent = "center";
+        heading.style.textAlign = "center"
+        const node = document.createTextNode("mohammed")
+        heading.appendChild(node)
+        document.body.appendChild(heading)
+
+
+  
+</script>
+
+<!-- <script>
+    const div = document.createElement('div');
+    div.className = "hp";
+    div.id = "ryzen-5";
+    div.setAttribute("title", "welcome yasir");
+    div.style.backgroundColor = "orange";
+    div.style.padding = "10px";
+    div.style.borderColor = "red";
+    div.style.borderRadius = "10px";
+    div.style.display = "block"; // Set display to "block" to place it on a new line
+    div.innerText = "chai aur code ";
+    const data = document.createTextNode("chai aur chai");
+    div.appendChild(data);
+    document.body.appendChild(div);
+
+    const di = document.createElement('div');
+    di.className = "hp";
+    di.id = "ryzen-5";
+    di.style.textAlign = "center";
+    di.setAttribute("title", "welcome yasir");
+    di.style.backgroundColor = "orange";
+    di.style.padding = "10px";
+    di.style.borderColor = "red";
+    di.style.borderRadius = "10px";
+    di.style.display = "block"; // Set display to "block" to place it on a new line
+    di.style.marginTop = "10px"; // Add margin to create space between the divs
+    di.innerText = "chai aur code";
+    const dta = document.createTextNode("chai aur chai");
+    di.appendChild(dta);
+    document.body.appendChild(di);
+</script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Practise</title>
+</head>
+<body style = "background-color: #212121; color:white">
+    <div class = "parent"> 
+        <div class="class">Monday</div>
+        <div class="class">Tuesday</div>
+        <div class="class">Wednesday</div>
+        <div class="class">Thursday</div>
+        <div class="class">Friday</div>
+    </div>
+    <script>
+       const parent = document.querySelector('.parent')
+      console.log(parent); //parent element
+      console.log(parent.children);
+      console.log(parent.children.length);
+      console.log(parent.children[0]);
+      console.log(parent.children[0].innerHTML);
+      console.log(Array.from(parent.children));
+    //   console.log(parent.children); //parent element child, in this case 
+    //   console.log(Array.from(parent.children));
+    //   console.log(parent.children[0].innerHTML);
+      
+      for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+
+      }
+    //   console.log(parent.firstElementChild);
+    //   console.log(parent.lastElementChild);
+      
+
+   
+     const dayOne =  document.querySelector(".class")
+    //  console.log(dayOne);
+    //  console.log(dayOne.parentElement)
+    //  dayOne.style.padding = '10px';
+    //  dayOne.style.backgroundColor = "#212121"
+    //  dayOne.style.borderRadius= "10px"
+
+     console.log(dayOne.nextElementSibling);
+     console.log("NODES :", parent.childNodes);
+     
+    </script>
+</body>
+
+
+</html>

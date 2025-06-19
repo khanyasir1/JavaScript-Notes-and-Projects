@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC</title>
+</head>
+<body>
+    <h1> Learning the async </h1>
+    <button id="stop">Stop it</button>
+    
+</body>
+<script>
+
+// ----------
+// 1.setTimeout()
+// 2.clearTimeout()
+// 3.setInterval()
+// 4.clearInterval()
+
+// ---------------
+
+// In JavaScript, setTimeout and clearTimeout are functions used to manage the timing of code execution.
+
+// &**********setTimeout Function:
+// The setTimeout function is used to execute a specified function or code snippet after a specified delay in milliseconds. It takes two arguments: the function to be executed and the delay in milliseconds.
+
+//***************** clearTimeout Function:
+// The clearTimeout function is used to cancel a timeout set by setTimeout before the specified function is executed.
+ 
+ //method-1  (callbach function/ handler, timeout) .....yaha par diretly handler\callback function kouse kiya hai,and after 2 second it will be printed and only once ,then it will be stopped
+//  setTimeout(function(){
+//     console.log("hello , yasir");
+//  } , 2000)
+
+
+//method-2 (refrence , timeout) ......yaha par we are passing the reference of the function only, and then after 2 second it will be printed and only once ,then it will be stopped
+
+// const reference = function(){
+//     console.log("hello khan!");
+// }
+
+// setTimeout(reference, 2000);
+
+//if we want ki jab woh return krra ho timeout tab kuch aur print ho,then use dom concept
+
+const change =function(){
+    document.querySelector('h1')
+    .innerHTML= "welcome Back !"
+    
+} 
+
+const one = setTimeout(change, 2000)
+
+
+// suppose mai chahta hu ki yeh timeout ko roku to phir after clicking the button it should be stopped.
+// then use the DOM concept
+
+
+
+document.querySelector('#stop')
+.addEventListener('click',function(){
+    clearTimeout(one);
+    console.log("stopped");
+})
+
+</script>
+</html>

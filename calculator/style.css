@@ -1,0 +1,40 @@
+body{
+    justify-content:center;
+    padding :0;
+    margin:0;
+}
+.main {
+    position : fixed;
+    text-align:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    padding :10px;
+    background-color : orange;
+}
+
+input{
+
+    border : 1px solid black;
+    padding : 10px;
+    border-radius :10px;
+    margin-bottom : 10%;
+    margin-top : 10%;
+    width :50%
+}
+
+.row {
+    padding : 10px;
+    
+    /* display:flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+}
+
+button {
+    border-radius : 50%;
+    padding : 12px;
+    justify-content : center;
+    text-align : center;
+}

@@ -1,0 +1,46 @@
+<!--
+    Event propagation refers to the process of how events are handled and transmitted through the DOM (Document Object Model) hierarchy in a web page. There are two phases of event propagation: capturing phase and bubbling phase.
+
+Capturing Phase:
+
+During the capturing phase, the event starts from the root of the DOM hierarchy and trickles down to the target element that triggered the event.
+Event handlers attached to elements during this phase are executed in the order of the hierarchy from the root to the target element.
+Target Phase:
+
+The event reaches the target element that originally triggered the event.
+
+
+Bubbling Phase:
+
+After the event reaches the target element, it starts to bubble up from the target element back to the root of the DOM hierarchy.
+Event handlers attached to elements during this phase are executed in the reverse order of the hierarchy, from the target element back up to the root.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div id ="images">
+        <ul>
+            <li><img src="yasirAatik.jpg" id="aatik" width="200" alt="aatik bhai" onclick="alert('yes, i am aatik')"></li>
+            <li><img src="tree.jpg" id="tree" width="200" alt="this is atree"></li>
+            <li><img src="basWhite.jpg" id="basit" width="200" alt="basit bhao"></li>
+            <li><img src="yasirIrfan.jpg" id="irfan" width="200" alt="ifran"></li>
+            <li><img src="kalYas.jpg" id="kalpesh" width="200" alt="kalpesh"></li>
+            <li><a href="https://www.youtube.com/watch?v=_TjtAyMkiTI&t=9359s">Google</a></li>
+        </ul>
+        <input type="text" id="input">
+    </div>
+
+
+    <div id="dom">
+
+
+    </div>
+</body>
+<script src="eventbasics.js"></script>
+</html>
+

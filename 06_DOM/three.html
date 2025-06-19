@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more in dom</title>
+
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+//------------------------------
+    // function addLan(LangName){
+    // const li = document.createElement('li')
+    // li.innerHTML=  `${LangName}`
+    // document.querySelector(".language").appendChild(li)
+
+    // }
+
+    // addLan("Javascript")
+    // addLan("Typescript")
+    
+//--------------------------------
+// optimized method bcz yaha par pura tree structure ko traverse nhi karna padegq
+// function OptiLan(addLan){
+//   const lan = document.createElement('li')
+//   lan.appendChild(document.createTextNode(addLan))
+//   document.querySelector('.language').appendChild(lan)
+
+
+// }
+// OptiLan("chai")
+// -----------------------------------
+//edit 
+
+    // const Edit = document.querySelector("li:nth-child(2)")
+    // Edit.innerHTML = "C++"
+    
+
+
+    // const secLan = document.querySelector("li:nth-child(2)")
+    // const sec_lan = document.createElement('li')
+    // sec_lan.textContent = "Rust"
+    // secLan.replaceWith(sec_lan)
+
+
+//edit
+
+// const firstLang = document.querySelector("li:first-child")
+// firstLang.outerHTML = "<li> C # </li>"
+
+// //remove
+
+// const Last = document.querySelector("li:last-child")
+// Last.remove()
+
+
+
+function update(text){
+    const ex= document.createElement('li')
+    ex.appendChild(document.createTextNode(text))
+    document.querySelector('.language').appendChild(ex)
+
+   
+}
+update("hello i am back")
+
+function add(text){
+ const headline =    document.createElement('li')
+ headline.appendChild(document.createTextNode(text))
+ document.querySelector('.language').appendChild(headline)
+
+}
+add("welcome")
+
+
+function display(element){
+    const heading = document.createElement('h1')
+    heading.style.color = "pink"
+    heading.style.backgroundColor = "orange"
+    heading.appendChild(document.createTextNode(element))
+    document.querySelector('.language').appendChild(heading)
+}
+
+display("i am kahan")
+
+const remove = document.querySelector("li:nth-child(2)")
+// remove.remove()
+
+const ed = document.querySelector("li:nth-child(2)")
+ed.outerHTML = "<h1> dom</h1>"
+
+// function OptiLan(addLan){
+//   const lan = document.createElement('li')
+//   lan.appendChild(document.createTextNode(addLan))
+//   document.querySelector('.language').appendChild(lan)
+
+
+// }
+// OptiLan("chai")
+
+
+</script>
+</html>

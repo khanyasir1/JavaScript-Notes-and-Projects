@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+div{
+   
+    background-color: black;
+    padding: 10px;
+}
+
+div .display{
+    margin-top: 100px;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+     justify-content: center; /*Center the flex container horizontally */
+    align-items: center; /* Center the flex container vertically */
+    height: 40px;
+    width: 30%; /* Occupy the full width of the parent */
+    background-color: orange;
+    padding: 10px;
+    /* Adjust the margin as needed for your design */
+}
